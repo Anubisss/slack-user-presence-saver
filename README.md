@@ -1,6 +1,6 @@
 # Slack User Presence Saver
 
-AWS Lambda function to retrieve Slack user presence and save it in DynamoDB.
+AWS Lambda function to retrieve Slack user presence and save it in DynamoDB. A simple analyzer also included.
 
 ## Features
 
@@ -8,6 +8,7 @@ AWS Lambda function to retrieve Slack user presence and save it in DynamoDB.
 - Saves presence data to DynamoDB with timestamp
 - Configurable via environment variables
 - Error handling and logging
+- You can analyze the gathered data
 
 ## Environment Variables
 
