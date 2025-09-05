@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "zip -r lambda.zip index.js node_modules/"
+    "deploy": "zip -r lambda.zip index.js node_modules/",
+    "analyze": "node analyze-presence.js"
   },
   "author": "",
   "license": "ISC",

@@ -54,5 +54,33 @@ This creates a `lambda.zip` file that you can upload to AWS Lambda.
 }
 ```
 
+## Analyze
+
+Run this script to analyse the gathere data.
+```bash
+DYNAMODB_TABLE_NAME=slack-user-presence npm run analyze
+```
+
+#### Example output:
+```
+📊 SLACK PRESENCE ANALYSIS
+
+📅 Aug 22, Fri
+  💼 Work Hours: 15:16 - 18:00
+  🟢 Online:  2h 29m (88%)
+  🔴 Offline: 20m (12%)
+  ☕ Breaks: 1 (20m)
+     1. 15:35 - 15:55 (20m)
+
+📅 Aug 25, Mon
+  💼 Work Hours: 09:40 - 17:05
+  🟢 Online:  6h 5m (81%)
+  🔴 Offline: 1h 25m (19%)
+  ☕ Breaks: 3 (1h 25m)
+     1. 11:25 - 11:30 (5m)
+     2. 12:00 - 13:15 (1h 15m)
+     3. 15:50 - 15:55 (5m)
+```
+
 ## License
 MIT
